@@ -42,7 +42,7 @@ def visualize_preprocessing(df_before, df_after, feature_to_plot):
     plt.subplot(1, 2, 1)
     sns.histplot(df_before[feature_to_plot], kde=True)
     plt.title(f"Distribution of {feature_to_plot} (Before Preprocessing)")
-
+    
     plt.subplot(1, 2, 2)
     sns.histplot(df_after[feature_to_plot], kde=True)
     plt.title(f"Distribution of {feature_to_plot} (After Normalization)")
