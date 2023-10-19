@@ -25,5 +25,3 @@ The script can be executed in a command-line interface. From the command line, n
 ```bash
 python 'PA1.py'
 ```
-
-Replace `<script_name.py>` with the name of the script file.
