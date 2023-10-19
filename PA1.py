@@ -175,15 +175,9 @@ def run_linear_regression_unoptimized(input_features, target, learning_rates, te
         "iterations": optimal_params['iterations']
     }
 
-def run_linear_regression_experiment_optimized(input_file, output_file=None, test_size=0.1262):
-    data=None
-    if output_file is None:
-        print("Unprocessed Data:")
-        data = pd.read_excel(input_file)
-    else:
-        print("Processed Data")
-        preprocess_data(input_file, output_file)
-        data = pd.read_excel(output_file)
+def run_linear_regression_experiment_optimized(input_file, output_file, test_size=0.1262):
+    preprocess_data(input_file, output_file)
+    data = pd.read_excel(output_file)
 
     features = [
         "Cement (component 1)(kg in a m^3 mixture)", 
